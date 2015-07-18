@@ -115,7 +115,8 @@ class UserGUI:
 		self.btnClose.connect("clicked", self.on_close_button_clicked)
 		pass
 
-	def initialise_user(self, *args):
+	# Initialising list store to show data
+        def initialise_user(self, *args):
 		self.lsr_user = gtk.ListStore(object,
                                                    str,
                                                    str)
